@@ -12,21 +12,6 @@ The deployment pipeline deploys the SPA to an Amazon CodeCatalyst environment. T
 
 **[React](https://reactjs.org/)** - powered by [Create React App](https://create-react-app.dev/)
 
-### Hosting
-
-
-
-**AWS Amplify Hosting**
-
-[AWS Amplify Hosting](https://aws.amazon.com/amplify/hosting/) offers a fully managed hosting service for web apps and static websites that can be accessed directly from the AWS console.
-
-![AWS Amplify Architecture Diagram](https://deyn4asqcu6xj.cloudfront.net/create-spa-amplify-hosting.png)
-
-## Connections and permissions
-
-You can create a new account connection from the AWS accounts menu in your Amazon CodeCatalyst space. AWS IAM roles added to the account connection are used to authorize project workflows to access AWS account resources.
-
-Expected role capabilities: *CodeCatalyst**
 
 ## Project resources
 
@@ -41,15 +26,6 @@ This project has created the following Amazon CodeCatalyst Resources:
 - A workflow for verifying pull requests at .codecatalyst/workflows/onPullRequestBuildAndTest.yaml
 - A workflow for deploying changes pushed to main at .codecatalyst/workflows/onPushToMainPipeline.yaml
 
-### Cleaning up resources
-
-To cleanup the resources created by this project delete the stack that the "Deploy to AWS Amplify Hosting" action created. To delete the stack use the AWS CloudFormation console in the AWS account you associated when you launched the blueprint. To find the stack name refer to the workflow, if you used the default stack name it will be DevelopmentFrontendStack-XXXXX.
-
-## Additional resources
-
-See the Amazon CodeCatalyst user guide for additional information on using the features and resources of Amazon CodeCatalyst
-
----
 
 # Getting Started with Create React App
 
